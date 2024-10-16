@@ -3,23 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Álvaro Castellano Giménez</title>
+    <title>Portfolio | Álvaro Castellano</title>
     <link rel="stylesheet" href="styles.css">
 
 </head>
 <body>
-
+    <header>
+        <img id="imgSpain" src="assets/icons/espana.png" alt="Bandera España" class="flag" data-lang="es">
+        <img id="imgUK" src="assets/icons/reino-unido.png" alt="Bandera Reino Unido" class="flag" data-lang="en">
+        <img id="imgCat" src="assets/icons/catalonia.png" alt="Bandera Cataluna" class="flag" data-lang="cat">
+        <h1 id="headerText">Bienvenido a Mi Página Web</h1>
+        <select id="languageSelector" style="display: none;"> <!-- Oculta el selector -->
+            <option value="es">Español</option>
+            <option value="en">English</option>
+            <option value="cat">Catalán</option>
+        </select>
+    </header>
+    
     <div>
-        <h2>Hola</h2>
-        <h2>Soy</h2>
-        <h2>Álvaro Castellano Giménez</h2>
+        <h2 id="saludo">Hola</h2>
+        <h2 id="soy">Soy</h2>
+        <h1>Álvaro Castellano Giménez</h1>
 
         <div>
-            <h2>Sobre mí</h2>
+            <h2 id="aboutMe">Sobre mí</h2>
             <p>
                 Soy un desarrollador web junior con una sólida base en tecnologías modernas de desarrollo web. A lo largo de mi
                 formación y experiencia, he trabajado con una variedad de herramientas y lenguajes que me permiten adaptarme a
-                diferentes proyectos y entornos de desarrollo. Entre mis principales habilidades destacan Angular, Express,
+                diferentes proyectos y entornos de desarrollo. 
+            </p>
+            <p>
+                Entre mis principales habilidades destacan Angular, Express,
                 Node.js, TypeScript, Symfony, JavaScript, PHP y C#. Estas tecnologías me han permitido construir aplicaciones
                 web dinámicas y eficientes, tanto en el front-end como en el back-end.
             </p>
@@ -29,28 +43,30 @@
             <h2>Experiencia</h2>
             <p>
                 Mi experiencia abarca tanto el <strong>desarrollo front-end</strong> como el <strong>desarrollo back-end</strong>,
-                lo que me proporciona una visión completa del ciclo de vida de las aplicaciones web. En el front-end, tengo
+                lo que me proporciona una visión completa del ciclo de vida de las aplicaciones web.  
+            </p>
+            <p>
+                En el front-end, tengo
                 habilidades para crear interfaces de usuario atractivas y funcionales, utilizando tecnologías como
-                <strong>Angular</strong> y <strong>JavaScript</strong>. En el back-end, he trabajado con <strong>Node.js</strong>,
+                <strong>Angular</strong> y <strong>JavaScript</strong>.
+            </p>
+            <p>
+                En el back-end, he trabajado con <strong>Node.js</strong>,
                 <strong>Express</strong>, <strong>PHP</strong>, y <strong>Symfony</strong> para diseñar arquitecturas robustas y
                 eficientes, así como para implementar APIs y manejar bases de datos.
-            </p>
-        </div>
-        
-        <div>
-            <h2>Pasión por el desarrollo</h2>
-            <p>
-                Me apasiona el mundo del desarrollo de aplicaciones web y tengo muchas ganas de continuar aprendiendo y mejorando
-                en este campo. Estoy entusiasmado por la posibilidad de aportar mis conocimientos y energía a proyectos reales.
-                Mi objetivo es no solo integrarme en el equipo, sino también contribuir activamente al éxito del proyecto,
-                aplicando las mejores prácticas y soluciones innovadoras para enfrentar los retos del desarrollo.
             </p>
         </div>
         
     </div>
     
     <footer>
-        <p>alvarocj95@hotmail.es</p>
+        <div>
+            <p>2024 © Alvaro Castellano</p>
+            <p>alvarocj95@hotmail.es</p>
+        </div>
+        
     </footer>
+    <script src="script.js"></script>
+
 </body>
 </html>
