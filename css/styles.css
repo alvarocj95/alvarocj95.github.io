@@ -1,65 +1,84 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4; /* Color de fondo opcional */
+    font-family: 'Poppins', sans-serif; /* Usar Poppins como fuente principal */
+    background-color: #ffffff; /* Color de fondo blanco */
     margin: 0;
     padding: 0;
 }
 
+/* Estilo para los títulos */
 h1, h2 {
     text-align: center;
     color: #222222; /* Color oscuro para los títulos */
-    margin-bottom: 10px;
-    font-family: SegoeBold, sans-serif;
+    margin-bottom: 20px; /* Espacio entre títulos y párrafos */
+    font-weight: 700; /* Aumenta el peso de los títulos */
 }
 
+/* Estilo para los párrafos */
 p {
     color: #333333; /* Color más claro para el texto */
     text-align: justify;
     max-width: 800px; /* Ancho máximo para los párrafos */
     margin: 0 auto; /* Centrar los párrafos */
-    line-height: 1.5;
+    line-height: 1.6; /* Mejorar la legibilidad */
     padding: 10px; /* Añadir un poco de espacio interno */
-    font-family: Segoe, sans-serif;
-
+    border-radius: 8px; /* Bordes redondeados */
+   
 }
 
 div {
-    margin: 20px;
+    margin: 20px 0; /* Margen vertical */
 }
 
+#divExperience {
+    margin-bottom: 60px;
+}
+
+/* Estilo para texto destacado */
 strong {
-    color: #333333; /* Un tono ligeramente más oscuro para el texto resaltado */
+    color: #555555; /* Color más oscuro para el texto resaltado */
 }
 
+/* Estilo para el header */
 header {
     text-align: justify; 
-    padding: 20px;      /* Añade espacio alrededor del contenido */
-    background-color: #f4f4f4; /* Color de fondo opcional para el encabezamiento */
+    padding: 20px;      
+    background-color: #ffffff; /* Color de fondo para el encabezado */
     color: #333333;
 }
 
+/* Estilo para las imágenes */
 img {
     max-width: 100%;
     height: 40px;
-    float: right; /* Hace que las imágenes floten a la derecha */
-    margin-left: 10px; /* Espacio entre las imágenes si es necesario */
+    margin-left: 10px; /* Espacio entre las imágenes */
+    transition: transform 0.3s; /* Añadir transición suave */
+}
+
+/* Efecto al pasar el ratón sobre las imágenes */
+img:hover {
+    transform: scale(1.1); /* Aumentar ligeramente el tamaño al pasar el ratón */
 }
 
 footer {
-    text-align: justify; /* Centra los textos */
-    padding: 20px;      /* Añade espacio alrededor del contenido */
-    background-color: #f4f4f4; /* Color de fondo opcional para el pie de página */
-    color: #333333;     /* Color del texto */
+    text-align: center; /* Centra el texto en el footer */
+    background-color: #333333; /* Color de fondo para el pie de página */
+    padding: 20px 0; /* Añadir espacio superior e inferior al footer */
 }
 
 footer p {
-    margin: 0 auto;      /* Espacio entre los párrafos */
+    color: #f4f4f4; /* Color del texto en el footer */
+    margin: 10px 0; /* Añadir un poco de espacio arriba y abajo del texto */
 }
 
 
-@font-face {
-    font-family: 'Segoe';
-    src: url('assets/fonts/segoeuithis.ttf') format('truetype');
+
+#name{
+    font-size: 70px;
+}
+
+/* @font-face {
+    font-family: 'Poppins';
+    src: url('assets/fonts/Poppins-ExtraLight.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -69,4 +88,4 @@ footer p {
     src: url('assets/fonts/segoeuithibd.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
-}
+} */

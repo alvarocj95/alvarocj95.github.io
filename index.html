@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Álvaro Castellano</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -12,7 +15,9 @@
         <img id="imgSpain" src="assets/icons/espana.png" alt="Bandera España" class="flag" data-lang="es">
         <img id="imgUK" src="assets/icons/reino-unido.png" alt="Bandera Reino Unido" class="flag" data-lang="en">
         <img id="imgCat" src="assets/icons/catalonia.png" alt="Bandera Cataluna" class="flag" data-lang="cat">
-        <h1 id="headerText">Bienvenido a Mi Página Web</h1>
+        <div>
+            <h1 id="headerText">Bienvenid@ a Mi Página Web</h1>
+        </div>
         <select id="languageSelector" style="display: none;"> <!-- Oculta el selector -->
             <option value="es">Español</option>
             <option value="en">English</option>
@@ -23,34 +28,34 @@
     <div>
         <h2 id="saludo">Hola</h2>
         <h2 id="soy">Soy</h2>
-        <h1>Álvaro Castellano Giménez</h1>
+        <h1 id="name">Álvaro Castellano</h1>
 
         <div>
             <h2 id="aboutMe">Sobre mí</h2>
-            <p>
+            <p id="aboutMeTextOne">
                 Soy un desarrollador web junior con una sólida base en tecnologías modernas de desarrollo web. A lo largo de mi
                 formación y experiencia, he trabajado con una variedad de herramientas y lenguajes que me permiten adaptarme a
                 diferentes proyectos y entornos de desarrollo. 
             </p>
-            <p>
+            <p id="aboutMeTextTwo">
                 Entre mis principales habilidades destacan Angular, Express,
                 Node.js, TypeScript, Symfony, JavaScript, PHP y C#. Estas tecnologías me han permitido construir aplicaciones
                 web dinámicas y eficientes, tanto en el front-end como en el back-end.
             </p>
         </div>
         
-        <div>
-            <h2>Experiencia</h2>
-            <p>
+        <div id="divExperience">
+            <h2 id="experience">Experiencia</h2>
+            <p id="experienceTextOne">
                 Mi experiencia abarca tanto el <strong>desarrollo front-end</strong> como el <strong>desarrollo back-end</strong>,
                 lo que me proporciona una visión completa del ciclo de vida de las aplicaciones web.  
             </p>
-            <p>
+            <p id="experienceTextTwo">
                 En el front-end, tengo
                 habilidades para crear interfaces de usuario atractivas y funcionales, utilizando tecnologías como
                 <strong>Angular</strong> y <strong>JavaScript</strong>.
             </p>
-            <p>
+            <p id="experienceTextThree">
                 En el back-end, he trabajado con <strong>Node.js</strong>,
                 <strong>Express</strong>, <strong>PHP</strong>, y <strong>Symfony</strong> para diseñar arquitecturas robustas y
                 eficientes, así como para implementar APIs y manejar bases de datos.
@@ -60,10 +65,9 @@
     </div>
     
     <footer>
-        <div>
+        
             <p>2024 © Alvaro Castellano</p>
             <p>alvarocj95@hotmail.es</p>
-        </div>
         
     </footer>
     <script src="script.js"></script>
