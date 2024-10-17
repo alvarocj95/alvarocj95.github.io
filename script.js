@@ -50,7 +50,7 @@ const images = {
         flagCat: "assets/icons/catalonia.png"
     },
     cat: {
-        flagSpain: "assets/icons/catalonia.png",
+        flagSpain: "assets/icons/espana.png",
         flagUK: "assets/icons/reino-unido.png",
         flagCat: "assets/icons/catalonia.png"
     }
