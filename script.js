@@ -79,8 +79,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // Función para cambiar el idioma
     function changeLanguage(event) {
         const selectedLanguage = event.target.getAttribute('data-lang');
-        updateText(selectedLanguage);
-        updateImages(selectedLanguage);
+        if (selectedLanguage) { // Verificar si selectedLanguage no es null
+            updateText(selectedLanguage);
+            updateImages(selectedLanguage);
+        }
     }
 
     moonIcon.addEventListener('click', function() {
@@ -105,6 +107,12 @@ document.addEventListener("DOMContentLoaded", () => {
     imgUK.addEventListener("click", changeLanguage);
     imgCat.addEventListener("click", changeLanguage);
 
+    // Añadir touchstart para dispositivos móviles
+    imgSpain.addEventListener("touchstart", changeLanguage);
+    imgUK.addEventListener("touchstart", changeLanguage);
+    imgCat.addEventListener("touchstart", changeLanguage);
+
     // Inicializar el texto en español
     updateText("es");
 });
+
