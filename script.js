@@ -1,7 +1,5 @@
 const translations = {
     en: {
-        saludo: "Hi!",
-        soy: "I am",
         aboutMe: "About me",
         aboutMeTextOne: "I am a junior web developer with a solid foundation in modern web development technologies. Throughout my education and experience, I have worked with a variety of tools and languages that allow me to adapt to different projects and development environments.",
         aboutMeTextTwo: "Among my main skills are <strong>Angular</strong>, <strong>Express</strong>, <strong>Node.js</strong>, <strong>TypeScript</strong>, <strong>Symfony</strong>, <strong>JavaScript</strong>, <strong>PHP</strong>, and <strong>C#</strong>. These technologies have allowed me to build dynamic and efficient web applications, both in the front-end and back-end.",
@@ -12,8 +10,6 @@ const translations = {
         experienceTextFour: "In the area of databases, I have experience working with database management systems such as <strong>SQL</strong>, <strong>MongoDB</strong>, and <strong>Oracle</strong>."
     },
     es: {
-        saludo: "¡Hola!",
-        soy: "Soy",
         aboutMe: "Sobre mí",
         aboutMeTextOne: "Soy un desarrollador web junior con una sólida base en tecnologías modernas de desarrollo web. A lo largo de mi formación y experiencia, he trabajado con una variedad de herramientas y lenguajes que me permiten adaptarme a diferentes proyectos y entornos de desarrollo.",
         aboutMeTextTwo: "Entre mis principales habilidades destacan <strong>Angular</strong>, <strong>Express</strong>, <strong>Node.js</strong>, <strong>TypeScript</strong>, <strong>Symfony</strong>, <strong>JavaScript</strong>, <strong>PHP</strong> y <strong>C#</strong>. Estas tecnologías me han permitido construir aplicaciones web dinámicas y eficientes, tanto en el front-end como en el back-end.",
@@ -24,8 +20,6 @@ const translations = {
         experienceTextFour: "En el área de bases de datos, tengo experiencia trabajando con sistemas de gestión de bases de datos como <strong>SQL</strong>, <strong>MongoDB</strong> y <strong>Oracle</strong>."
     },
     cat: {
-        saludo: "Hola!",
-        soy: "Soc",
         aboutMe: "Sobre mi",
         aboutMeTextOne: "Soc un desenvolupador web júnior amb una sòlida base en tecnologies modernes de desenvolupament web. Al llarg de la meva formació i experiència, he treballat amb una varietat d'eines i llenguatges que em permeten adaptar-me a diferents projectes i entorns de desenvolupament.",
         aboutMeTextTwo: "Entre les meves principals habilitats destaquen <strong>Angular</strong>, <strong>Express</strong>, <strong>Node.js</strong>, <strong>TypeScript</strong>, <strong>Symfony</strong>, <strong>JavaScript</strong>, <strong>PHP</strong> i <strong>C#</strong>. Aquestes tecnologies m'han permès construir aplicacions web dinàmiques i eficients, tant en el front-end com en el back-end.",
@@ -63,7 +57,6 @@ document.addEventListener("DOMContentLoaded", () => {
     
     // Función para actualizar el texto en la página
     function updateText(language) {
-        document.getElementById("saludo").innerText = translations[language].saludo;
         document.getElementById("soy").innerText = translations[language].soy;
         document.getElementById("aboutMe").innerText = translations[language].aboutMe;
         document.getElementById("aboutMeTextOne").innerText = translations[language].aboutMeTextOne;
@@ -72,9 +65,9 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("aboutMeTextTwo").innerHTML = translations[language].aboutMeTextTwo;
         document.getElementById("experience").innerText = translations[language].experience;
         document.getElementById("experienceTextOne").innerText = translations[language].experienceTextOne;
-        document.getElementById("experienceTextTwo").innerHTML = translations[language].experienceTextTwo; // innerHTML para etiquetas HTML
-        document.getElementById("experienceTextThree").innerHTML = translations[language].experienceTextThree; // innerHTML para etiquetas HTML
-        document.getElementById("experienceTextFour").innerHTML = translations[language].experienceTextFour; // innerHTML para etiquetas HTML
+        document.getElementById("experienceTextTwo").innerHTML = translations[language].experienceTextTwo; 
+        document.getElementById("experienceTextThree").innerHTML = translations[language].experienceTextThree;
+        document.getElementById("experienceTextFour").innerHTML = translations[language].experienceTextFour; 
     }
 
     // Función para actualizar las imágenes en el encabezado
@@ -100,11 +93,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Cambiar el icono
         if (body.classList.contains('dark-mode')) {
-            this.src = 'assets/icons/sun.png'; // Cambia a la imagen del sol
-            this.alt = 'Modo Claro'; // Cambia el texto alternativo
+            this.src = 'assets/icons/sun.png'; 
+            this.alt = 'Modo Claro'; 
         } else {
-            this.src = 'assets/icons/moon.png'; // Cambia a la imagen de la luna
-            this.alt = 'Modo Oscuro'; // Cambia el texto alternativo
+            this.src = 'assets/icons/moon.png'; 
+            this.alt = 'Modo Oscuro'; 
         }
     });
     

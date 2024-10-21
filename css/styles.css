@@ -1,17 +1,16 @@
 * {
-    box-sizing: border-box; /* Incluye padding y border en el ancho y alto de los elementos */
+    box-sizing: border-box;
     cursor: url("../assets/icons/cursor.png"), auto;
 }
 
 body {
     font-family: 'Nunito Sans', sans-serif; 
     background-color: #FFFFFF; 
-    color: #333333; /* Color de texto predeterminado */
-    margin: 0; /* Asegúrate de que no haya margen en el body */
-    padding: 0; /* Asegúrate de que no haya padding en el body */
+    color: #333333; 
+    margin: 0; 
+    padding: 0; 
 }
 
-/* Estilo para los títulos */
 h1, h2 {
     text-align: center;
     color: #222222; 
@@ -19,7 +18,6 @@ h1, h2 {
     font-weight: 700; 
 }
 
-/* Estilo para los párrafos */
 p {
     color: #333333; 
     text-align: center;
@@ -45,13 +43,10 @@ div {
     margin: 20px 0;             
 }
 
-/* Estilo para texto destacado */
 strong {
     color: #555555; 
 }
 
-
-/* Estilo para las imágenes */
 img {
     max-width: 80px;          
     height: auto;               
@@ -59,7 +54,6 @@ img {
     transition: transform 0.3s; 
 }
 
-/* Efecto al pasar el ratón sobre las imágenes */
 img:hover {
     transform: scale(1.1); 
 }
@@ -70,18 +64,18 @@ img:hover {
 }
 
 footer {
-    text-align: center; /* Centra el texto en el footer */
+    text-align: center; 
     background-color: #0F0F0F; 
     padding: 5px 0; 
-    display: flex; /* Usa flexbox para centrar el contenido */
-    flex-direction: column; /* Coloca los elementos en columna */
-    align-items: center; /* Centra horizontalmente */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
     margin-top: 100px;
 }
 
 footer p {
     color: #f4f4f4; 
-    margin: 5px 0; /* Reduce el margen para que estén más juntos */
+    margin: 5px 0; 
 }
 
 #name {
@@ -90,32 +84,32 @@ footer p {
 
 header {
     display: flex;
-    flex-direction: column; /* Coloca las barras en una columna */
-    margin-bottom: 100px; /* Margen inferior constante */
-    width: 100%; /* Asegura que el header use todo el ancho */
+    flex-direction: column; 
+    margin-bottom: 100px; 
+    width: 100%; 
 }
 
 .top-bar {
-    background-color: #FFFFFF; /* Color de fondo para la barra superior */
-    height: 45px; /* Altura fija */
-    display: flex; /* Usar flexbox para alinear contenido */
-    align-items: center; /* Alinear verticalmente al centro */
-    padding: 0 20px; /* Espaciado horizontal */
-    margin: 0; /* Eliminar margen */
+    background-color: #FFFFFF; 
+    height: 45px; 
+    display: flex; 
+    align-items: center; 
+    padding: 0 20px; 
+    margin: 0; 
 }
 
 .bottom-bar {
-    background-color: #0F0F0F; /* Color de fondo para la barra inferior */
-    color: white; /* Color del texto en la barra inferior */
-    display: flex; /* Usar flexbox para alinear contenido */
-    align-items: center; /* Alinear verticalmente al centro */
-    padding: 10px 20px; /* Espaciado para la barra inferior */
-    margin: 0; /* Eliminar margen */
-    height: 50px; /* Altura fija */
+    background-color: #0F0F0F; 
+    color: white; 
+    display: flex; 
+    align-items: center; 
+    padding: 10px 20px; 
+    margin: 0; 
+    height: 50px; 
 }
 
 .social {
-    width: 30px; /* Espaciado entre los iconos sociales */
+    width: 30px; 
     border-radius: 50%;
 }
 
@@ -124,67 +118,61 @@ header {
 }
 
 select {
-    margin-left: 10px; /* Espaciado para el selector de idioma */
+    margin-left: 10px; 
 }
 
-/* Estilos para el botón */
 #moon {
-    margin-left: auto; /* Empuja el botón hacia la derecha */
+    margin-left: auto; 
     width: 25px;
     height: 25px; 
     border-radius: 50%;
-    transition: background-color 0.3s, box-shadow 0.3s; /* Transición suave */
+    transition: background-color 0.3s, box-shadow 0.3s; 
 }
 
 #moon:hover {
-    background-color: rgba(255, 255, 255, 0.3); /* Fondo blanco semitransparente */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Sombra suave */
+    background-color: rgba(255, 255, 255, 0.3); 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
 }
 
-
-/* Estilos para el modo oscuro */
 body.dark-mode {
-    background-color: #1E1E1E; /* Fondo oscuro */
-    color: #FFFFFF; /* Color de texto claro */
+    background-color: #1E1E1E; 
+    color: #FFFFFF; 
 }
 
 body.dark-mode header {
-    background-color: #2C2C2C; /* Fondo oscuro para el encabezado */
+    background-color: #2C2C2C; 
 }
 
 body.dark-mode strong {
-    color: #FFD54F ; /* Color de texto oscuro */
+    color: #FFD54F; 
 }
 
 body.dark-mode .top-bar {
-    background-color: #2C2C2C; /* Fondo oscuro para la barra superior */
+    background-color: #2C2C2C; 
 }
 
 body.dark-mode .bottom-bar {
-    background-color: #1F1F1F; /* Fondo oscuro para la barra inferior */
+    background-color: #1F1F1F; 
 }
 
 body.dark-mode footer {
-    background-color: #292929; /* Fondo oscuro para el footer */
+    background-color: #292929; 
 }
 
 body.dark-mode h1, 
 body.dark-mode h2,
 body.dark-mode p {
-    color: #FFFFFF; /* Color claro para títulos y párrafos */
+    color: #FFFFFF; 
 }
 
 body.dark-mode img {
-    filter: brightness(0.8); /* Ajusta la luminosidad de las imágenes */
+    filter: brightness(0.8); 
 }
 
-/* Estilos para el botón en modo oscuro */
 body.dark-mode #moon {
-    color: white; /* Color del texto del botón en modo oscuro */
+    color: white; 
 }
 
-
-/* Transiciones suaves para cambios de color */
 header, .top-bar, .bottom-bar {
-    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+    transition: background-color 0.3s, color 0.3s; 
 }
