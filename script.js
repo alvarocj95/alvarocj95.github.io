@@ -59,7 +59,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const imgSpain = document.getElementById("imgSpain");
     const imgUK = document.getElementById("imgUK");
     const imgCat = document.getElementById("imgCat");
-
+    const moonIcon = document.getElementById("moon");
+    
     // Función para actualizar el texto en la página
     function updateText(language) {
         document.getElementById("saludo").innerText = translations[language].saludo;
@@ -90,6 +91,23 @@ document.addEventListener("DOMContentLoaded", () => {
         updateImages(selectedLanguage);
     }
 
+    moonIcon.addEventListener('click', function() {
+        const body = document.body;
+
+        // Alternar entre los modos
+        body.classList.toggle('dark-mode');
+        body.classList.toggle('light-mode');
+
+        // Cambiar el icono
+        if (body.classList.contains('dark-mode')) {
+            this.src = 'assets/icons/sun.png'; // Cambia a la imagen del sol
+            this.alt = 'Modo Claro'; // Cambia el texto alternativo
+        } else {
+            this.src = 'assets/icons/moon.png'; // Cambia a la imagen de la luna
+            this.alt = 'Modo Oscuro'; // Cambia el texto alternativo
+        }
+    });
+    
     // Añadir event listeners a las imágenes de las banderas
     imgSpain.addEventListener("click", changeLanguage);
     imgUK.addEventListener("click", changeLanguage);

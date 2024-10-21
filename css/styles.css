@@ -3,10 +3,10 @@
     cursor: url("../assets/icons/cursor.png"), auto;
 }
 
-
 body {
     font-family: 'Nunito Sans', sans-serif; 
     background-color: #FFFFFF; 
+    color: #333333; /* Color de texto predeterminado */
     margin: 0; /* Asegúrate de que no haya margen en el body */
     padding: 0; /* Asegúrate de que no haya padding en el body */
 }
@@ -30,6 +30,10 @@ p {
     border-radius: 8px; 
 }
 
+a {
+    text-decoration: none;
+}
+
 div {
     margin: 20px 0;
 }
@@ -46,6 +50,7 @@ strong {
     color: #555555; 
 }
 
+
 /* Estilo para las imágenes */
 img {
     max-width: 80px;          
@@ -61,8 +66,7 @@ img:hover {
 
 #imgSpain, #imgUK, #imgCat {
     width: 30px;
-    height: 30px;
-    
+    height: 30px;  
 }
 
 footer {
@@ -87,12 +91,13 @@ footer p {
 header {
     display: flex;
     flex-direction: column; /* Coloca las barras en una columna */
-    margin-bottom: 100px;
+    margin-bottom: 100px; /* Margen inferior constante */
+    width: 100%; /* Asegura que el header use todo el ancho */
 }
 
 .top-bar {
     background-color: #FFFFFF; /* Color de fondo para la barra superior */
-    height: 45px;
+    height: 45px; /* Altura fija */
     display: flex; /* Usar flexbox para alinear contenido */
     align-items: center; /* Alinear verticalmente al centro */
     padding: 0 20px; /* Espaciado horizontal */
@@ -106,20 +111,80 @@ header {
     align-items: center; /* Alinear verticalmente al centro */
     padding: 10px 20px; /* Espaciado para la barra inferior */
     margin: 0; /* Eliminar margen */
-    height: 50px;
+    height: 50px; /* Altura fija */
 }
 
 .social {
     width: 30px; /* Espaciado entre los iconos sociales */
     border-radius: 50%;
-
 }
 
 .social:hover {
     background-color: #333;
-  }
-  
+}
 
 select {
     margin-left: 10px; /* Espaciado para el selector de idioma */
+}
+
+/* Estilos para el botón */
+#moon {
+    margin-left: auto; /* Empuja el botón hacia la derecha */
+    width: 25px;
+    height: 25px; 
+    border-radius: 50%;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transición suave */
+}
+
+#moon:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Fondo blanco semitransparente */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Sombra suave */
+}
+
+
+/* Estilos para el modo oscuro */
+body.dark-mode {
+    background-color: #1E1E1E; /* Fondo oscuro */
+    color: #FFFFFF; /* Color de texto claro */
+}
+
+body.dark-mode header {
+    background-color: #2C2C2C; /* Fondo oscuro para el encabezado */
+}
+
+body.dark-mode strong {
+    color: #FFD54F ; /* Color de texto oscuro */
+}
+
+body.dark-mode .top-bar {
+    background-color: #2C2C2C; /* Fondo oscuro para la barra superior */
+}
+
+body.dark-mode .bottom-bar {
+    background-color: #1F1F1F; /* Fondo oscuro para la barra inferior */
+}
+
+body.dark-mode footer {
+    background-color: #292929; /* Fondo oscuro para el footer */
+}
+
+body.dark-mode h1, 
+body.dark-mode h2,
+body.dark-mode p {
+    color: #FFFFFF; /* Color claro para títulos y párrafos */
+}
+
+body.dark-mode img {
+    filter: brightness(0.8); /* Ajusta la luminosidad de las imágenes */
+}
+
+/* Estilos para el botón en modo oscuro */
+body.dark-mode #moon {
+    color: white; /* Color del texto del botón en modo oscuro */
+}
+
+
+/* Transiciones suaves para cambios de color */
+header, .top-bar, .bottom-bar {
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
 }
