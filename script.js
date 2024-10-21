@@ -57,7 +57,6 @@ document.addEventListener("DOMContentLoaded", () => {
     
     // Función para actualizar el texto en la página
     function updateText(language) {
-        document.getElementById("soy").innerText = translations[language].soy;
         document.getElementById("aboutMe").innerText = translations[language].aboutMe;
         document.getElementById("aboutMeTextOne").innerText = translations[language].aboutMeTextOne;
         
