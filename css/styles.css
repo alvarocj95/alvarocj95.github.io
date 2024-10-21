@@ -1,104 +1,125 @@
-*{
-    cursor: pointer;
+* {
+    box-sizing: border-box; /* Incluye padding y border en el ancho y alto de los elementos */
+    cursor: url("../assets/icons/cursor.png"), auto;
 }
 
+
 body {
-    font-family: 'Poppins', sans-serif; /* Usar Poppins como fuente principal */
-    background-color: #ffffff; /* Color de fondo blanco */
-    margin: 0;
-    padding: 0;
+    font-family: 'Nunito Sans', sans-serif; 
+    background-color: #FFFFFF; 
+    margin: 0; /* Asegúrate de que no haya margen en el body */
+    padding: 0; /* Asegúrate de que no haya padding en el body */
 }
 
 /* Estilo para los títulos */
 h1, h2 {
     text-align: center;
-    color: #222222; /* Color oscuro para los títulos */
-    margin-bottom: 20px; /* Espacio entre títulos y párrafos */
-    font-weight: 700; /* Aumenta el peso de los títulos */
+    color: #222222; 
+    margin-bottom: 20px; 
+    font-weight: 700; 
 }
 
 /* Estilo para los párrafos */
 p {
-    color: #333333; /* Color más claro para el texto */
-    text-align: justify;
-    max-width: 800px; /* Ancho máximo para los párrafos */
-    margin: 0 auto; /* Centrar los párrafos */
-    line-height: 1.6; /* Mejorar la legibilidad */
-    padding: 10px; /* Añadir un poco de espacio interno */
-    border-radius: 8px; /* Bordes redondeados */
-   
+    color: #333333; 
+    text-align: center;
+    max-width: 800px; 
+    margin: 0 auto; 
+    line-height: 1.6; 
+    padding: 10px; 
+    border-radius: 8px; 
 }
 
 div {
-    margin: 20px 0; /* Margen vertical */
+    margin: 20px 0;
 }
 
 #divExperience div {
-    display: flex;               /* Utiliza Flexbox para centrar */
-    justify-content: center;     /* Centra horizontalmente */
-    flex-wrap: wrap;            /* Permite que las imágenes se envuelvan en múltiples líneas */
-    margin: 20px 0;             /* Añadir un margen vertical */
+    display: flex;              
+    justify-content: center;     
+    flex-wrap: wrap;            
+    margin: 20px 0;             
 }
 
 /* Estilo para texto destacado */
 strong {
-    color: #555555; /* Color más oscuro para el texto resaltado */
-}
-
-/* Estilo para el header */
-header {
-    text-align: justify; 
-    padding: 20px;      
-    background-color: #ffffff; /* Color de fondo para el encabezado */
-    color: #333333;
+    color: #555555; 
 }
 
 /* Estilo para las imágenes */
 img {
-    max-width: 80px;           /* Cambia el ancho máximo según sea necesario */
-    height: auto;               /* Mantener la relación de aspecto */
-    margin: 15px;               /* Espacio entre las imágenes */
-    transition: transform 0.3s; /* Añadir transición suave */
+    max-width: 80px;          
+    height: auto;               
+    margin: 15px;              
+    transition: transform 0.3s; 
 }
 
 /* Efecto al pasar el ratón sobre las imágenes */
 img:hover {
-    transform: scale(1.1); /* Aumentar ligeramente el tamaño al pasar el ratón */
+    transform: scale(1.1); 
 }
-
 
 #imgSpain, #imgUK, #imgCat {
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    
 }
+
 footer {
     text-align: center; /* Centra el texto en el footer */
-    background-color: #333333; /* Color de fondo para el pie de página */
-    padding: 20px 0; /* Añadir espacio superior e inferior al footer */
+    background-color: #0F0F0F; 
+    padding: 5px 0; 
+    display: flex; /* Usa flexbox para centrar el contenido */
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra horizontalmente */
+    margin-top: 100px;
 }
 
 footer p {
-    color: #f4f4f4; /* Color del texto en el footer */
-    margin: 10px 0; /* Añadir un poco de espacio arriba y abajo del texto */
+    color: #f4f4f4; 
+    margin: 5px 0; /* Reduce el margen para que estén más juntos */
 }
 
-
-
-#name{
-    font-size: 70px;
+#name {
+    font-size: 90px;
 }
 
-/* @font-face {
-    font-family: 'Poppins';
-    src: url('assets/fonts/Poppins-ExtraLight.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+header {
+    display: flex;
+    flex-direction: column; /* Coloca las barras en una columna */
+    margin-bottom: 100px;
 }
 
-@font-face {
-    font-family: 'SegoeBold';
-    src: url('assets/fonts/segoeuithibd.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-} */
+.top-bar {
+    background-color: #FFFFFF; /* Color de fondo para la barra superior */
+    height: 45px;
+    display: flex; /* Usar flexbox para alinear contenido */
+    align-items: center; /* Alinear verticalmente al centro */
+    padding: 0 20px; /* Espaciado horizontal */
+    margin: 0; /* Eliminar margen */
+}
+
+.bottom-bar {
+    background-color: #0F0F0F; /* Color de fondo para la barra inferior */
+    color: white; /* Color del texto en la barra inferior */
+    display: flex; /* Usar flexbox para alinear contenido */
+    align-items: center; /* Alinear verticalmente al centro */
+    padding: 10px 20px; /* Espaciado para la barra inferior */
+    margin: 0; /* Eliminar margen */
+    height: 50px;
+}
+
+.social {
+    width: 30px; /* Espaciado entre los iconos sociales */
+    border-radius: 50%;
+
+}
+
+.social:hover {
+    background-color: #333;
+  }
+  
+
+select {
+    margin-left: 10px; /* Espaciado para el selector de idioma */
+}

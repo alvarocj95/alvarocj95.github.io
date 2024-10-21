@@ -5,26 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Álvaro Castellano</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="light-mode">
     <header>
-        <img id="imgSpain" src="assets/icons/espana.png" alt="Bandera España" class="flag" data-lang="es">
-        <img id="imgUK" src="assets/icons/reino-unido.png" alt="Bandera Reino Unido" class="flag" data-lang="en">
-        <img id="imgCat" src="assets/icons/catalonia.png" alt="Bandera Cataluna" class="flag" data-lang="cat">
-        <div>
-            <h1 id="headerText">Bienvenid@ a Mi Página Web</h1>
+        <div class="top-bar">
+            <div>
+                <img id="imgSpain" src="assets/icons/espana.png" alt="Bandera España" class="flag" data-lang="es">
+                <img id="imgUK" src="assets/icons/reino-unido.png" alt="Bandera Reino Unido" class="flag" data-lang="en">
+                <img id="imgCat" src="assets/icons/catalonia.png" alt="Bandera Cataluna" class="flag" data-lang="cat">
+            </div>
         </div>
-        <select id="languageSelector" style="display: none;"> <!-- Oculta el selector -->
-            <option value="es">Español</option>
-            <option value="en">English</option>
-            <option value="cat">Catalán</option>
-        </select>
+        <div class="bottom-bar">
+            <div>
+                <a href="https://www.linkedin.com/in/alvarocastellanog/" target="_blank">
+                    <img src="assets/icons/linkedin.png" alt="Linkedin" class="social">
+                </a>
+                <a href="https://github.com/alvarocj95" target="_blank">
+                    <img src="assets/icons/github.png" alt="Github" class="social">
+                </a>
+            </div>
+            
+            <!-- Botón para alternar entre modos -->
+
+            <select id="languageSelector" style="display: none;"> 
+                <option value="es">Español</option>
+                <option value="en">English</option>
+                <option value="cat">Catalán</option>
+            </select>
+        </div>
     </header>
     
+    <!-- Contenido del portfolio -->
     <div>
         <h2 id="saludo">Hola</h2>
         <h2 id="soy">Soy</h2>
@@ -63,7 +77,6 @@
                 <img src="assets/icons/sass.png" alt="">
                 <img src="assets/icons/bootstrap.png" alt="">
                 <img src="assets/icons/angular.png" alt="">
-    
             </div>
             <p id="experienceTextThree">
                 En el back-end, he trabajado con <strong>Node.js</strong>,
@@ -77,18 +90,24 @@
                 <img src="assets/icons/php.png" alt="">
                 <img src="assets/icons/symfony.png" alt="">
             </div>
+            <p id="experienceTextFour">
+                En el área de bases de datos, tengo experiencia trabajando con sistemas de gestión de bases de datos como 
+                <strong>SQL</strong>, <strong>MongoDB</strong> y <strong>Oracle</strong>.
+            </p>
+            <div>
+                <img src="assets/icons/sql.png" alt="">
+                <img src="assets/icons/mongodb.png" alt="">
+                <img src="assets/icons/oracle.png" alt="">
+            </div>
         </div>
-       
-        
     </div>
     
     <footer>
-        
-            <p>2024 © Alvaro Castellano</p>
-            <p>alvarocj95@hotmail.es</p>
-        
+        <p>2024 © Álvaro Castellano</p>
+        <p>alvarocj95@hotmail.es</p>
     </footer>
-    <script src="script.js"></script>
 
+    <!-- JavaScript para alternar el modo oscuro -->
+    <script src="script.js"></script>
 </body>
 </html>
